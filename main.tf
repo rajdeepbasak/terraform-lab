@@ -8,7 +8,7 @@ variable "project" {
 }
 variable "mt" {
     type = string
-    default = "fi-micro"
+    default = "f1-micro"
 }
 
 resource "google_compute_instance" "myvm" {
