@@ -1,8 +1,11 @@
 provider "google" {
-	project = "fresh-entity-315006"
+	project = var.project
 	region = "us-central1"
 }
 
+variable "project" {
+    type = string  
+}
 variable "mt" {
     type = string
     default = "f1-micro"
